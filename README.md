@@ -1,6 +1,6 @@
 # Dashboard-Design
 
 
-Live Link - https://yokesh.in/dashboard
+Live Link - http://yokesh.in/dashboard/
 
 web link https://yokesh-ks.github.io/Dashboard-Design/
