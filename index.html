@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Design</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="jQuery-plugin-progressbar.css">
+	<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script src="jQuery-plugin-progressbar.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="head">
+                <div class="logo">
+                    <img src="images/logo.svg" alt="">
+                    <span>Gleek</span>
+                </div>
+                <img src="images/setting.svg" alt="">
+            </div>
+            <div class="side-menu">
+                <ul>
+                    <li class="card">
+                       <h1>Navigations</h1>
+                       <ul>
+                           <li>
+                               <a class="menu" href="">
+                                   <img src="images/Dashboards.svg" alt="">
+                                   <span>Dashboard</span>
+                               </a>
+                            </li>
+                            <li>
+                                <a class="menu active" href="">
+                                    <img src="images/Layouts.svg" alt="">
+                                    <span>Layouts</span>
+                                </a>
+                             </li>
+                             <li>
+                                <a class="menu" href="">
+                                    <img src="images/Mailbox.svg" alt="">
+                                    <span>Mailbox</span>
+                                </a>
+                             </li>
+                             <li>
+                                <a class="menu" href="">
+                                    <img src="images/Ecommerce.svg" alt="">
+                                    <span>Ecommerce</span>
+                                </a>
+                             </li>
+                       </ul>
+                    </li>
+                    <hr>
+                    <li class="card">
+                        <h1>Apps</h1>
+                        <ul>
+                            <li>
+                                <a class="menu" href="">
+                                    <img src="images/Calendar.svg" alt="">
+                                    <span>Calendar</span>
+                                </a>
+                             </li>
+                             <li>
+                                 <a class="menu" href="">
+                                     <img src="images/Messanger.svg" alt="">
+                                     <span>Messanger</span>
+                                 </a>
+                              </li>
+                              <li>
+                                 <a class="menu" href="">
+                                     <img src="images/Contacts.svg" alt="">
+                                     <span>Contacts</span>
+                                 </a>
+                              </li>
+                              <li>
+                                 <a class="menu" href="">
+                                     <img src="images/File_manager.svg" alt="">
+                                     <span>File Manager</span>
+                                 </a>
+                              </li>
+                              <li>
+                                <a class="menu" href="">
+                                    <img src="images/Todo.svg" alt="">
+                                    <span>To-Do</span>
+                                </a>
+                             </li>
+                             <li>
+                                <a class="menu" href="">
+                                    <img src="images/Newsfeed.svg" alt="">
+                                    <span>News Feed</span>
+                                </a>
+                             </li>
+                        </ul>
+                    </li>
+                    <hr>
+                    <li class="card">
+                        <h1>Pages</h1>
+                        <ul>
+                            <li>
+                                <a class="menu" href="">
+                                    <img src="images/Invoices.svg" alt="">
+                                    <span>Invoices</span>
+                                </a>
+                             </li>
+                             <li>
+                                 <a class="menu" href="">
+                                     <img src="images/Events.svg" alt="">
+                                     <span>Events</span>
+                                 </a>
+                              </li>
+                              <li>
+                                 <a class="menu" href="">
+                                     <img src="images/404page.svg" alt="">
+                                     <span>404 Page</span>
+                                 </a>
+                              </li>
+                              <li>
+                                 <a class="menu" href="">
+                                     <img src="images/Projects.svg" alt="">
+                                     <span>Projects</span>
+                                 </a>
+                              </li>
+                              <li>
+                                <a class="menu" href="">
+                                    <img src="images/Comingsoon.svg" alt="">
+                                    <span>Coming Soon</span>
+                                </a>
+                             </li>
+                             <li>
+                                <a class="menu" href="">
+                                    <img src="images/Profile.svg" alt="">
+                                    <span>Profile</span>
+                                </a>
+                             </li>
+                        </ul>
+                    </li>
+                    <hr>
+                    <li class="card">
+                        <h1>User Interface</h1>
+                        <ul>
+                            <li>
+                                <a class="menu" href="">
+                                    <img src="images/Elements.svg" alt="">
+                                    <span>Elements</span>
+                                </a>
+                             </li>
+                             <li>
+                                 <a class="menu" href="">
+                                     <img src="images/Typography.svg" alt="">
+                                     <span>Typography</span>
+                                 </a>
+                              </li>
+                              <li>
+                                 <a class="menu" href="">
+                                     <img src="images/Icons.svg" alt="">
+                                     <span>Icons</span>
+                                 </a>
+                              </li>
+                              <li>
+                                 <a class="menu" href="">
+                                     <img src="images/Tables.svg" alt="">
+                                     <span>Tables</span>
+                                 </a>
+                              </li>
+                        </ul>
+                    </li>
+                    <hr>
+                    <li class="card">
+                        <ul>
+                            <li>
+                                <a class="menu" href="">
+                                    <img src="images/Logout.svg" alt="">
+                                    <span>Logout</span>
+                                </a>
+                             </li> 
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="dashboard">
+            <div class="header">
+                <div class="search-bar">
+                    <input type="search" id="site-search" name="search"
+                aria-label="Search through site content" placeholder="Search..">
+                </div>
+                <div class="right-section">
+                    <img src="images/Mailbox.svg" alt="">
+                    <img src="images/notification.svg" alt="">
+                    <div class="profile">
+                        <img src="" alt="">
+                        <h1>Yokesh</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="breadcrums">
+                <h1>Job Portal Management</h1>
+                <div class="right">
+                    <a href="">Home</a>
+                    <span> - </span>
+                    <a href="">Job Hosting</a>
+                </div>
+            </div>
+            <div class="main-feature">
+                <div class="feature-1">
+                    <div class="graph">
+                        <div class="circular">
+                            <div>
+                                <div class="progress-bar position" data-percent="60" data-duration="1000" data-color="#F3F6F9,#51CCA9"></div>
+                                <span>Pending Users</span>
+                            </div>
+                            <div>
+                                <div class="progress-bar position" data-percent="80" data-color="#F3F6F9,#F98C74"></div>
+                                <span>Active Users</span>
+                            </div>
+                            <div>
+                                <div class="progress-bar position" data-percent="45" data-duration="1000" data-color="#F3F6F9,#2290FF"></div>
+                                <span>Dormant Users</span>
+                            </div>
+                            <div>
+                                <div class="progress-bar position" data-percent="15" data-color="#F3F6F9,#D07BED"></div>
+                                <span>Deleted Users</span>
+                            </div>
+                        </div>
+                        <div class="stats-card">
+                            <div class="bar-chart">
+                                <h1>Job Application Detail</h1>
+                                <div class="chart" style="height:100%">
+                                    <canvas id="barChart" style="
+                                    width: 100%!important;"></canvas>
+                                </div>
+                            </div>
+                            <div class="right-stats">
+                            <div class="content">
+                                    <img src="images/circle-graph/Applicants.svg" alt="">
+                                    <p><span style="color: #FC9E45;">3845</span><br>Applicants</p>
+                                </div>
+                                <div class="content">
+                                    <img src="images/circle-graph/Forwards.svg" alt="">
+                                    <p><span style="color: #D78AFD;">3845</span><br>Interviews</p>
+                                </div>
+                                <div class="content">
+                                    <img src="images/circle-graph/Interviewer.svg" alt="">
+                                    <p><span style="color: #51CCA9;">3845</span><br>Forwards</p>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-2">
+                        <div class="job-details">
+                            <div class="job-seek">
+                                <div class="number">
+                                    69
+                                </div>
+                                
+                                <div class="words">
+                                    <h1>Total Job Seekers</h1>
+                                    <p>A small river named Duden flows by their place and supplies necessary.</p>
+                                    <a href="">More Info</a>
+                                </div>
+                            </div>
+                            <div class="job-provide">
+                                <div class="number">
+                                    104
+                                </div>
+                                <div class="words">
+                                    <h1>Total Job Providers</h1>
+                                    <p>A small river named Duden flows by their place and supplies necessary.</p>
+                                    <a href="">More Info</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="social">
+                            <a class="social-box Facebook" href="">Post to Facebook</a>
+                            <a class="social-box twitter" href="">Post to Twitter</a>
+                            <a class="social-box linkedin"href="">Post to Linkedin</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="feature2-list">   
+                    <div class="table-list">
+                        <div class="head">
+                            <h1>List of Posted Job</h1>
+                            <div class="right">
+                                <input type="checkbox" id="title" name="selectall" value="">
+                                <label for="selectall">Select All</label>
+                                <input type="submit" value="Delete">
+                                <input type="submit" value="View More">
+                            </div>
+                        </div>
+                        <div class="table-section">
+<table>
+                            <thead>
+                                <tr>
+                                    <th>Title</th>
+                                    <th>Posted</th>
+                                    <th>Expires</th>
+                                    <th>Scheduled</th>
+                                    <th>Location</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="inputcheck">
+                                        <input type="checkbox" id="title" name="title" value="Survey of looking mountain">
+                                        <label for="title">Survey of looking mountain</label>
+                                    </td>
+                                    <td>14.06.2018</td>
+                                    <td>20.06.2018</td>
+                                    <td>Art Designer</td>
+                                    <td>New York</td>
+                                </tr>
+                                <tr>
+                                    <td class="inputcheck">
+                                        <input type="checkbox" id="title" name="title" value="Survey of looking mountain">
+                                        <label for="title">Survey of looking mountain</label>
+                                    </td>
+                                    <td>14.06.2018</td>
+                                    <td>20.06.2018</td>
+                                    <td>Art Designer</td>
+                                    <td>New York</td>
+                                </tr>
+                                <tr>
+                                    <td class="inputcheck">
+                                        <input type="checkbox" id="title" name="title" value="Survey of looking mountain">
+                                        <label for="title">Survey of looking mountain</label> 
+                                    </td>
+                                    <td>14.06.2018</td>
+                                    <td>20.06.2018</td>
+                                    <td>Art Designer</td>
+                                    <td>New York</td>
+                                </tr>
+                                <tr>
+                                    <td class="inputcheck">
+                                        <input type="checkbox" id="title" name="title" value="Survey of looking mountain">
+                                        <label for="title">Survey of looking mountain</label> 
+                                    </td>
+                                    <td>14.06.2018</td>
+                                    <td>20.06.2018</td>
+                                    <td>Art Designer</td>
+                                    <td>New York</td>
+                                </tr>
+                                <tr>
+                                    <td class="inputcheck">
+                                        <input type="checkbox" id="title" name="title" value="Survey of looking mountain">
+                                        <label for="title">Survey of looking mountain</label> 
+                                    </td>
+                                    <td>14.06.2018</td>
+                                    <td>20.06.2018</td>
+                                    <td>Art Designer</td>
+                                    <td>New York</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        </div>
+                        
+                    </div>
+                    <div class="link-section">
+                        <div class="link-card">
+                            <h1>Link to this job</h1>
+                            <p>Far far away, behind the word mountain far from the countries Vokalia and Consonantia there live the blind texts.</p>
+                            <div class="search-bar">
+                                <input type="search">
+                                <input type="submit" value ="copy">
+                            </div>
+                        </div>
+                        <div class="link-card">
+                            <h1>Use the button Widget</h1>
+                            <p>Far far away, behind the word mountain far from the countries Vokalia and Consonantia there live the blind texts.</p>
+                            <div class="search-bar">
+                                <input type="search">
+                                <input type="submit" value ="copy">
+                            </div>
+                        </div>
+                        <div class="link-card">
+                            <h1>Upload Resume by Email</h1>
+                            <p>Far far away, behind the word mountain far from the countries Vokalia and Consonantia there live the blind texts.</p>
+                            <div class="search-bar">
+                                <input type="search" placeholder="Enter the Email">
+                                <input type="submit" value ="copy">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <script src="app-chart.js"></script>
+    <script>
+		$(".progress-bar").loading();
+		$('input').on('click', function () {
+			 $(".progress-bar").loading();
+		});
+	</script>
+</body>
+</html>
